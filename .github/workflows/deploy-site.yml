@@ -1,9 +1,9 @@
 name: Deploy website
 on:
   # https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#release
-  release:
+  push:
     branches:
-      - master
+      - master # default branch
 
 jobs:
   build-and-deploy:
